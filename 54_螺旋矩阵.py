@@ -3,7 +3,7 @@ class Solution:
         if not matrix: return []
         NROW, NCOL = len(matrix), len(matrix[0])
 
-        def helper(depth):
+        def helper(depth):sta
             nrow, ncol = NROW - 2 * depth, NCOL - 2 * depth
             if nrow <= 0 or ncol <= 0: return []
             if nrow == 1: return matrix[depth][depth:depth + ncol]
